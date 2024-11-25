@@ -89,7 +89,7 @@ public final class LambdaUtilities {
             map.merge(
                 op.apply(elem), 
                 new HashSet<>(Collections.singleton(elem)), 
-                (s1,s2) -> { 
+                (s1, s2) -> { 
                     s1.addAll(s2); 
                     return s1;
                 }
